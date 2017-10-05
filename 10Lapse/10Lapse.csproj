@@ -17,7 +17,11 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
-    <PackageCertificateKeyFile>10Lapse_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>10Lapse_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>3A2FD24D5E59EB75A0258D71657B30535DAC04ED</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -109,6 +113,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="10Lapse_StoreKey.pfx" />
     <None Include="10Lapse_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -155,6 +160,7 @@
     <Content Include="blur.jpg" />
     <Content Include="blur2.jpg" />
     <Content Include="LargeLogo1.png" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

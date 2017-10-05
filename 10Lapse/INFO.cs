@@ -8,6 +8,6 @@ namespace _10Lapse
 {
 	public static class INFO
 	{
-		public static int Version = 5;
+		public static int Version = 6;
 	}
 }
