@@ -17,6 +17,7 @@ namespace _10Lapse
 		public MainPage()
 		{
 			this.InitializeComponent();
+
 			Project = new Project(this);
 			Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
 			Object o = localSettings.Values["version"];

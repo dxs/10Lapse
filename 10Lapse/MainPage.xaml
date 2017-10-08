@@ -24,8 +24,6 @@
 		</Style>
 
 		<Style TargetType="ComboBox" x:Key="ComboStyle">
-			<Setter Property="Background" Value="White" />
-			<Setter Property="Foreground" Value="Black" />
 			<Setter Property="Margin" Value="10" />
 		</Style>
 
@@ -81,7 +79,7 @@
 						<TextBlock x:Name="DurationBox" Text="{x:Bind Project.Duration,Converter={StaticResource DurationConverter},Mode=OneWay}" Margin="10" Style="{StaticResource TitleTextBlockStyle}"/>
 						<TextBlock x:Name="FPSBox" HorizontalAlignment="Center" Text="{x:Bind Project.Framerate,Converter={StaticResource FPSConverter},Mode=OneWay}" Style="{StaticResource TitleTextBlockStyle}"/>
 						<Slider Minimum="10" Maximum="60" Value="{x:Bind Project.Framerate,Mode=TwoWay}" />
-						<ComboBox Header="Resolution" Style="{StaticResource ComboStyle}" ItemsSource="{x:Bind Project.Quality.QualityList}" SelectedIndex="{x:Bind Project.Quality.SelectedItem,Mode=TwoWay}">
+						<ComboBox Header="Resolution" ItemsSource="{x:Bind Project.Quality.QualityList}" SelectedIndex="{x:Bind Project.Quality.SelectedItem,Mode=TwoWay}">
 							
 						</ComboBox>
 					</StackPanel>
